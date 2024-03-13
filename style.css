@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+
+
+.input-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width: 100%;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.input-section:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-section select,
+.input-section input[type="number"],
+.input-section input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-section select:focus,
+.input-section input[type="number"]:focus,
+.input-section input[type="date"]:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.input-section button:hover {
+    background-color: #0067cc;
+}
+
+
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+   
+}
+
+.transactions-list table tbody tr:hover {
+    background-color: #f0f0f0;
+    
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media only screen and (min-width: 640px) {
+    .input-section {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .input-group {
+        width: calc(50% - 15px);
+    }
+}
+
+
+.totals {
+    font-weight: bold;
+    text-align: center;
+    margin: 12px;
+    padding: 4px;
+}
+
+.transactions-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: rgb(215, 222, 38);
+    color: rgb(12, 1, 1);
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#add-btn {
+    width: 100%;
+    font-size: 18px;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: rgb(238, 9, 9);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.income-type .input-section button {
+    background-color: green;
+}
+
+.expense-type .input-section button {
+    background-color: red;
+}
